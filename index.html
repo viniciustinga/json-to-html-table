@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON data to HTML Table using Ajax Jquery getJSON method</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="
+	sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+	</script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="table-responsive">
+			<h1>JSON data to HTML Table using Ajax Jquery getJSON method</h1>
+			<br>
+			<table class="table table-bordered table-striped" id="employee_table">
+				<tr>
+					<th>Name</th>
+					<th>Address</th>
+					<th>Gender</th>
+					<th>Designation</th>
+					<th>Age</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+$(document).ready(function() {
+	$.getJSON("employee.json", function(data) {
+		var employee_data = '';
+		$.each(data, function(key, value) {
+			employee_data += '<tr>';
+			employee_data += '<td>' + value.name + '</td>';
+			employee_data += '<td>' + value.address + '</td>';
+			employee_data += '<td>' + value.gender + '</td>';
+			employee_data += '<td>' + value.designation + '</td>';
+			employee_data += '<td>' + value.age + '</td>';
+			employee_data += '</tr>';
+		});
+		$('#employee_table').append(employee_data);
+	});
+});	
+</script>

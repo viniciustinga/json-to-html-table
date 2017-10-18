@@ -1,0 +1,46 @@
+[
+	{
+		"id": "1",
+		"name": "John Smith",
+		"address": "656 Edsel Road Sherman Oaks, CA 91403",
+		"gender": "Male",
+		"designation": "Manager",
+		"age": "40"
+	},
+
+	{
+		"id": "2",
+		"name": "Clara Berry",
+		"address": "63 Woodridge Lane Memphis, TN 38138",
+		"gender": "Female",
+		"designation": "Programmer",
+		"age": "22"
+	},
+
+	{
+		"id": "3",
+		"name": "Barbra K. Hurley",
+		"address": "1241 Canis Heights Drive Los Angeles, CA 90017",
+		"gender": "Female",
+		"designation": "Service technician",
+		"age": "26"
+	},
+
+	{
+		"id": "4",
+		"name": "Antonio J. Forbes",
+		"address": "403 Snyder Avenue Charlotte, NC 28208",
+		"gender": "Male",
+		"designation": "Personal banker",
+		"age": "32"
+	},
+
+	{
+		"id": "5",
+		"name": "Charles D. Horst",
+		"address": "1636 Walnut Hill Drive Cincinnati, OH 45202",
+		"gender": "Male",
+		"designation": "Financial investigator",
+		"age": "29"
+	}	
+]
